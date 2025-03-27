@@ -1,7 +1,7 @@
-import img1 from "../assets/default.svg";
-import img2 from "../assets/Group34.svg";
-import img3 from "../assets/Group35.svg";
-import img4 from "../assets/Group36.svg";
+import img1 from "../assets/Group61.svg";
+import img2 from "../assets/Group61.svg";
+import img3 from "../assets/Group61.svg";
+import img4 from "../assets/Group61.svg";
 
 const Cards2 = () => {
 
