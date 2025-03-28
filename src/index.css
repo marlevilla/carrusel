@@ -56,14 +56,4 @@ button {
 }
 
 
-.slide{
-  max-width: 100;
-  height: auto;
-  opacity: 0;
-  transition: opacity 0.75s ease-in-out ;
 
-}
-
-.slide.active{
-  opacity: 1;
-}
