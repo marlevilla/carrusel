@@ -1,16 +1,10 @@
-import img1 from "../assets/default.svg";
-import img2 from "../assets/Group34.svg";
-import img3 from "../assets/Group35.svg";
-import img4 from "../assets/Group36.svg";
 
-const Cards = () => {
-
-  const diapositivas: string[] = [img1, img2, img3, img4];
+const Cards = ({ imgs }: { imgs: string[] }) => {
 
   return (
-    <div className="flex flex-wrap  justify-center gap-4 py-4">
-      {diapositivas.map((img, index) => (
-        <div key={index} className="">
+    <div className="grid grid-cols-2 sm:flex sm:justify-center sm:items-center gap-4 py-4">
+      {imgs.map((img, index) => (
+        <div key={index} className={`flex items-center ${index % 2 !== 0 ? "justify-start" : "justify-end"}`}>
           <img
             src={img}
             alt={`slide-${index}`}
@@ -19,7 +13,7 @@ const Cards = () => {
         </div>
       ))}
     </div>
-  )
-}
+  );
+};
 
-export default Cards
+export default Cards;
