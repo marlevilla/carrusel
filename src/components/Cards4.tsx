@@ -8,7 +8,7 @@ const Cards4 = () => {
     const diapositivas: string[] = [img1, img2, img3, img4];
 
     return (
-        <div className="h-full flex flex-shrink-0 overflow-hidden mb-4 justify-center gap-4 py-4">
+        <div className="flex flex-shrink-0 overflow-hidden mb-4 justify-center gap-4 py-4">
             {diapositivas.map((img, index) => (
                 <div key={index} className="">
                     <img

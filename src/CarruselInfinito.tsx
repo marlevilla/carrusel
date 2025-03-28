@@ -30,14 +30,16 @@ const CarruselInfinito: React.FC<CarouselProps> = ({
 
             <div className="flex justify-center items-center overflow-hidden">
                 <div
-                    className="flex transition-transform ease-in-out duration-700"
+                    className="flex transition-transform ease-in-out duration-700 "
                     style={{ transform: `translateX(-${curr * 100}%)` }}
                 >
                     {slides.map((slide, index) => (
-                        <div key={index} className="min-w-full flex-shrink-0">
+                        <div key={index} className="min-w-full flex-shrink-0  w-full">
                             <img className="w-full" src={`${slide}`} alt="" />
                         </div>
                     ))}
+
+
                 </div>
             </div>
 
@@ -59,10 +61,3 @@ const CarruselInfinito: React.FC<CarouselProps> = ({
 };
 
 export default CarruselInfinito;
-
-
-
-
-
-
-
